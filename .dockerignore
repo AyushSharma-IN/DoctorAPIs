@@ -1,0 +1,3 @@
+﻿# Ignore bin and obj folders (build artifacts)
+bin/
+obj/

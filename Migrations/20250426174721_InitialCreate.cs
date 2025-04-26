@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace DoctorAPIs.Data.Migrations
+namespace DoctorAPIs.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate : Migration
@@ -19,7 +19,7 @@ namespace DoctorAPIs.Data.Migrations
                     Name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     Specialization = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     Experience = table.Column<int>(type: "int", nullable: false),
-                    Availability = table.Column<string>(type: "NVARCHAR(MAX)", nullable: true),
+                    Availability = table.Column<string>(type: "NVARCHAR(MAX)", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETUTCDATE()")
                 },
                 constraints: table =>
